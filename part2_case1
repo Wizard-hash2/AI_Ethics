@@ -1,0 +1,27 @@
+Case 1: Biased Hiring Tool - Amazon's AI Recruiting System
+1. Source of Bias
+The primary source of bias was biased training data. The model was trained on resumes from a 10-year period where most applicants were male, reflecting the tech industry's gender imbalance. This caused the AI to favor male resume patterns and penalize indicators of female identity like women's college attendance or participation in women's organizations.
+Contributing factors:
+
+Model design issues interpreting gendered patterns as suitability indicators
+Feature engineering flaws encoding gender proxies
+
+
+2. Three Fixes to Make the Tool Fairer
+Fix 1: Debias the Training Data
+Action: Create balanced datasets with equal gender representation and diverse educational backgrounds
+Rationale: Reduces exposure to historical hiring biases
+Fix 2: Remove Gender-Proxies and Sensitive Features
+Action: Audit features to eliminate gender indicators like women's college names and gender-specific pronouns
+Rationale: Prevents indirect discrimination
+Fix 3: Introduce Fairness Constraints
+Action: Implement fairness-aware algorithms (demographic parity/equal opportunity constraints)
+Rationale: Ensures predictions don't disadvantage any gender
+
+3. Metrics to Evaluate Fairness Post-Correction
+
+Demographic Parity: Equal selection rates across groups
+Equal Opportunity: Equal selection chance for qualified candidates regardless of gender
+Disparate Impact Ratio: Outcome ratio between groups (acceptable range 0.8-1.25 per EEOC rules)
+
+
